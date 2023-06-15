@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp.ProjectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="ProjectWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="ID"/>
+        <ComboBox Grid.Row="0" Grid.Column="1" x:Name="IDComboBox"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Deadline"/>
+        <DatePicker Grid.Row="1" Grid.Column="1" x:Name="DeadlineDatePicker"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Technology"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="TechnologyTextBox"/>
+        <Button Grid.Row="3" Grid.Column="0" Content="Create" Click="CreateButton_Click"/>
+        <Button Grid.Row="3" Grid.Column="1" Content="Read" Click="ReadButton_Click"/>
+        <Button Grid.Row="4" Grid.Column="0" Content="Update" Click="UpdateButton_Click"/>
+        <Button Grid.Row="4" Grid.Column="1" Content="Delete" Click="DeleteButton_Click"/>
+    </Grid>
+</Window>
